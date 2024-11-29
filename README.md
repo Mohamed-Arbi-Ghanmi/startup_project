@@ -1,0 +1,2 @@
+Ce projet offre une plateforme complète pour la gestion des projets entre investisseurs et entrepreneurs. En permettant aux investisseurs de rechercher, acheter et gérer des projets, et aux entrepreneurs de lister leurs projets, éditer leurs profils et suivre leurs transactions, cette plateforme
+facilite les interactions dans le domaine du capital-risque. Il contribue à simplifier et à rationaliser le processus d'investissement et de gestion des projets, en favorisant une collaboration fluide entre investisseurs et entrepreneurs dans le domaine du capital-risque.
