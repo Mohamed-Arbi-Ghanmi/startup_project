@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil Startuper</title>
+    <link rel="stylesheet" type="text/css" href="home_startuper.css"> 
+    <script src="https://kit.fontawesome.com/7777ad54d9.js"></script>
+    <script src="../custom-scripts.js" defer></script>
+</head>
+<body>
+
+
+<header>
+      <div class="navigation-div">
+        <nav class="nav">
+          <h3 class="logo"><a href="home_startuper_test.html"> Capital Connect</a></h3>
+          <ul class="nav-ul">
+                <li><a href="home_startuper_test.html">Accueil</a></li>
+                <li><a href="ajoutprojet.html">Ajouter un projet</a></li>
+                <li><a href="editerprofil0.php">Editer un profil</a></li>
+                <li><a href="listerprojets.php">Lister mes projets</a></li>
+                <!-- Barre de recherche -->
+                <li>
+                    <form>
+                    <input type="text" name="keyword" placeholder="Rechercher un projet...">
+                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </li>
+                <li>
+                  <a href="logout.php"><img src="logout.png" alt="logout" class="logout-img"></a>
+                </li>
+          </ul>
+          
+        </nav>
+      </div>
+    </header>
+    <main>
+    <div class="firstcontainer">
+    <h2>Bienvenue sur la plateforme !</h2>
+    <p>Ici, vous pouvez consulter et gérer vos projets en cours. N'hésitez pas à explorer et à rechercher de nouvelles opportunités.</p>
+    </div>
+
+<section class="hero">
+        <div class="row-container">
+          <div class="column">
+            <h2>Du concept à la concrétisation, ensemble vers la réussite entrepreneuriale.</h2>
+            <p>Notre plateforme dédiée aux startupers offre un environnement dynamique et collaboratif conçu pour catalyser l'innovation et favoriser la croissance des jeunes entreprises. En tant qu'entrepreneur ambitieux, vous bénéficiez d'un espace où présenter vos projets novateurs, rechercher des financements et établir des partenariats stratégiques. Grâce à une interface conviviale, vous pouvez naviguer aisément à travers les différentes fonctionnalités, telles que la publication de projets, la recherche de capitaux risques et la gestion de votre profil. Notre objectif est de vous fournir les outils et les ressources nécessaires pour transformer vos idées en réalité, tout en vous connectant à un réseau d'investisseurs potentiels et de mentors expérimentés. Rejoignez notre communauté dynamique de startupers et faites progresser votre projet vers de nouveaux sommets d'innovation et de réussite.
+
+            </p>
+           
+          </div>
+          <div class="column">
+            <img src="startup2.png" alt="heroImg" class="hero_img" />
+          </div>
+        </div>
+        <img src="images/bg-bottom-hero.png" alt="" class="curveImg" />
+      </section>
+      
+      <script>
+        const header = document.querySelector("header");
+        const menuToggler = document.querySelectorAll("#menu_toggle");
+  
+        menuToggler.forEach(toggler => {
+          toggler.addEventListener("click", () => header.classList.toggle("showMenu"));
+        });
+      </script>
+    </main>
+<footer>
+        <div class="row">
+            <div class="col">
+                <a href="home_startuper_test.html"><p class="col-logo">Capital Connect</p></a>
+            </div>
+            <div class="col">
+                <h3>localisation <div class="underline"><span></span></div></h3>
+                <p>rue liberte</p>
+                <p>Tunis,Tunisie</p>
+                <p class="email-id">mohamedghanmi011@gmail.com</p>
+                <h4>28497803</h4>
+            </div>
+            <div class="col">
+                <h3>Links <div class="underline"><span></span></div></h3>
+                <ul>
+                    <li><a href="home_startuper_test.html">Accueil</a></li>
+                    <li><a href="ajoutprojet.html">Ajouter un projet</a></li>
+                    <li><a href="editerprofil0.php">Editer un profil</a></li>
+                    <li><a href="listerprojets.php">Lister mes projets</a></li>
+                    <li><a href="">About us</a></li>
+                    <li><a href="">Contact</a></li>
+
+                </ul>
+            </div>
+            <div class="col">
+                <h3>newsletter <div class="underline"><span></span></div></h3>
+                <form>
+                    <i class="fa-regular fa-envelope"></i>
+                    <input type="email" placeholder="enter your email id" required >
+                    <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+                </form>
+                <div class="social-icons">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-x"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+                <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+
+        </div>
+        <hr>
+     </footer>   
+
+
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ajouter un Projet</title>
+  <link rel="stylesheet" type="text/css" href="ajoutprojet.css">
+  <script src="https://kit.fontawesome.com/7777ad54d9.js"></script>
+  <script src="../custom-scripts.js" defer></script>
+
+</head>
+<body>
+  <header>
+    <div class="navigation-div">
+      <nav class="nav">
+        <h3 class="logo"><a href="home_startuper_test.html"> Capital Connect</a></h3>
+        <ul class="nav-ul">
+              <li><a href="home_startuper_test.html">Accueil</a></li>
+              <li><a href="ajoutprojet.html">Ajouter un projet</a></li>
+              <li><a href="editerprofil0.php">Editer un profil</a></li>
+              <li><a href="listerprojets.php">Lister mes projets</a></li>
+              <!-- Barre de recherche -->
+              <li>
+                  <form>
+                  <input type="text" name="keyword" placeholder="Rechercher un projet...">
+                  <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                  </form>
+              </li>
+              <li>
+                <a href="logout.php"><img src="logout.png" alt="logout" class="logout-img"></a>
+              </li>
+        </ul>
+        
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <h2>Ajouter un Projet</h2>
+    <form class="ajoutprojet" name="ajout_projet" method="post" action="ajoutprojet.php">
+      <label for="titre">Titre du Projet:</label>
+      <input type="text" id="titre" name="titre" required>
+
+      <label for="description">Description du Projet:</label>
+      <textarea id="description" name="description" rows="4" required></textarea>
+
+      <label for="actions">Nombre d'Actions:</label>
+      <input type="number" id="actions" name="actions" required min="0">
+
+      <label for="valeur_action">Valeur Monétaire de l'Action:</label>
+      <input type="number" id="valeur_action" name="valeur_action" required step="0.01" min="0">
+
+      <input type="submit" value="Ajouter le Projet">
+    </form>
+  </div>
+
+  <footer>
+        <div class="row">
+            <div class="col">
+                <a href="home_startuper_test.html"><p class="col-logo">Capital Connect</p></a>
+            </div>
+            <div class="col">
+                <h3>localisation <div class="underline"><span></span></div></h3>
+                <p>rue liberte</p>
+                <p>Tunis,Tunisie</p>
+                <p class="email-id">mohamedghanmi011@gmail.com</p>
+                <h4>28497803</h4>
+            </div>
+            <div class="col">
+                <h3>Links <div class="underline"><span></span></div></h3>
+                <ul>
+                    <li><a href="home_startuper_test.html">Accueil</a></li>
+                    <li><a href="ajoutprojet.html">Ajouter un projet</a></li>
+                    <li><a href="editerprofil0.php">Editer un profil</a></li>
+                    <li><a href="listerprojets.php">Lister mes projets</a></li>
+                    <li><a href="">About us</a></li>
+                    <li><a href="">Contact</a></li>
+
+                </ul>
+            </div>
+            <div class="col">
+                <h3>newsletter <div class="underline"><span></span></div></h3>
+                <form>
+                    <i class="fa-regular fa-envelope"></i>
+                    <input type="email" placeholder="enter your email id" required >
+                    <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+                </form>
+                <div class="social-icons">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-x"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+                <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+
+        </div>
+        <hr>
+     </footer>   
+
+</body>
+</html>

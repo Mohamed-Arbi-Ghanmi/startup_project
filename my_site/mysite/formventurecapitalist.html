@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inscription Venture Capital</title>
+  <link rel="stylesheet" type="text/css" href="formstartuper.css">
+</head>
+<body>
+  <h3 class="CapitalConnect">Capital Connect</h3>
+  <div class="container">
+    <h2>Inscription Venture Capital</h2>
+    <form name="inscription" onsubmit="return validateForm()" method="post" action="formventurecapitalist.php" class="formstartuper">
+      <label for="nom">Nom:</label>
+      <input type="text" id="nom" name="nom" onblur="validateNom()">
+      <span id="nom-error" class="error"></span>
+      
+      <label for="prenom">Prénom:</label>
+      <input type="text" id="prenom" name="prenom" onblur="validatePrenom()">
+      <span id="prenom-error" class="error"></span>
+      
+      <label for="cin">Numéro CIN (8 chiffres):</label>
+      <input type="text" id="cin" name="cin" onblur="validateCIN()">
+      <span id="cin-error" class="error"></span>
+      
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email" onblur="validateEmail()">
+      <span id="email-error" class="error"></span>
+      
+      <label for="pseudo">Pseudo:</label>
+      <input type="text" id="pseudo" name="pseudo">
+      
+      <label for="password">Mot de passe (8 caractères min, lettre ou chiffre, $ ou # à la fin):</label>
+      <input type="password" id="password" name="password" onblur="validatePassword()">
+      <span id="password-error" class="error"></span>
+      
+      <input type="submit" value="S'inscrire">
+    </form>
+  </div>
+  <script src="formstartuper.js"></script>
+</body>
+</html>
